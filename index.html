@@ -1,244 +1,352 @@
-<!doctype html>
-<html lang="ru">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site that will help you check the technical section">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title>Grand RolePlay | Technical HELP</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="A site that will help you check the technical section" name="description" />
-    <meta content="-" name="author" />
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
-
-<body data-sidebar="dark">
-
-    <div id="layout-wrapper">
-        <header id="page-topbar">
-            <div class="navbar-header">
-                <div class="d-flex">
-                    <div class="navbar-brand-box">
-                        <a href="index.html" class="logo logo-light">
-                            <span class="logo-sm">
-                                <img src="assets/images/logo-sm.png" alt="" height="22">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="assets/images/logo-light.png" alt="" height="24">
-                            </span>
-                        </a>
-                    </div>
-                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
-                        <h4>Быстрые ответы</h4>
-                    </button>
+<body class="vertical-layout">
+    <div class="infobar-settings-sidebar-overlay"></div>
+    <div id="containerbar">
+        <div class="leftbar">
+            <div class="sidebar">
+                <div class="logobar">
+                    <a href="index.html" class="logo logo-large"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a>
+                    <a href="index.html" class="logo logo-small"><img src="assets/images/small_logo.png" class="img-fluid" alt="logo"></a>
                 </div>
-                <div class="d-flex">
-                    <div class="d-inline-block">
-                        <h5><span class="badge badge-danger float-right">JETIX</span></h5>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="vertical-menu">
-            <div data-simplebar class="h-100">
-                <div id="sidebar-menu">
-                    <ul class="metismenu list-unstyled" id="side-menu">
+                <div class="navigationbar">
+                    <ul class="vertical-menu">
                         <li>
-                            <a href="index.html" class="waves-effect">
-                                <i class="mdi mdi-file-document-box-outline"></i>
-                                <span>Быстрые ответы</span>
+                            <a href="javaScript:void();">
+                              <img src="assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Главное</span><i class="feather icon-chevron-right pull-right"></i>
                             </a>
+                            <ul class="vertical-submenu">
+                                <li><a href="index.html">Быстрые ответы</a></li>
+                                <li><a href="info.html">Информация</a></li>
+                                <li><a href="translate.html">Переводы</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="inform.html" class=" waves-effect">
-                                <i class="mdi mdi-information-outline"></i>
-                                <span>Информация</span>
+                            <a href="javaScript:void();">
+                                <img src="assets/images/svg-icon/basic.svg" class="img-fluid" alt="basic"><span>Остальное</span><i class="feather icon-chevron-right pull-right"></i>
                             </a>
-                        </li>
-                        <li>
-                            <a href="translate.html" class=" waves-effect">
-                                <i class="mdi mdi-notebook-outline"></i>
-                                <span>Переводы</span>
-                            </a>
+                            <ul class="vertical-submenu">
+                                <li><a href="basic-ui-kits-alerts.html">Alerts</a></li>
+                                <li><a href="basic-ui-kits-badges.html">Badges</a></li>
+                                <li><a href="basic-ui-kits-buttons.html">Buttons</a></li>
+                                <li><a href="basic-ui-kits-cards.html">Cards</a></li>
+                                <li><a href="basic-ui-kits-carousel.html">Carousel</a></li>
+                                <li><a href="basic-ui-kits-collapse.html">Collapse</a></li>
+                                <li><a href="basic-ui-kits-dropdowns.html">Dropdowns</a></li>
+                                <li><a href="basic-ui-kits-embeds.html">Embeds</a></li>
+                                <li><a href="basic-ui-kits-grids.html">Grids</a></li>
+                                <li><a href="basic-ui-kits-images.html">Images</a></li>
+                                <li><a href="basic-ui-kits-media.html">Media</a></li>
+                                <li><a href="basic-ui-kits-modals.html">Modals</a></li>
+                                <li><a href="basic-ui-kits-paginations.html">Paginations</a></li>
+                                <li><a href="basic-ui-kits-popovers.html">Popovers</a></li>
+                                <li><a href="basic-ui-kits-progressbars.html">Progress Bars</a></li>
+                                <li><a href="basic-ui-kits-spinners.html">Spinners</a></li>
+                                <li><a href="basic-ui-kits-tabs.html">Tabs</a></li>   
+                                <li><a href="basic-ui-kits-toasts.html">Toasts</a></li>     
+                                <li><a href="basic-ui-kits-tooltips.html">Tooltips</a></li>
+                                <li><a href="basic-ui-kits-typography.html">Typography</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
+                <!-- End Navigationbar -->
             </div>
+            <!-- End Sidebar -->
         </div>
-
-        <div class="main-content">
-            <div class="page-content">
-
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-lg-0">
-                                <h5 class="mt-0 mb-3">Запрос данных</h5>
-                                <table class="table table-bordered m-0">
-                                    <thead><tr>
-                                        <th style="width: 50%;">
-                                        <i class="ti-file"></i>🇬🇧 - Английский</th>
-                                        <th>🇩🇪 - Немецкий</th>
-                                    </tr></thead>
-                                    <tbody><tr>
-                                        <td>Hello. To check, we need the following data:<br>- ID or Nick-Name:<br>- E-Mail:<br>- Social Club login:<br>- IPv4 (From here: https://whatismyipaddress.com/):</td>
-                                        <td>Hallo. Um das zu überprüfen, benötigen wir die folgenden Daten:<br>- ID oder Nick-Name:<br>- E-Mail:<br>- Social Club login:<br>- IPv4 (From here: https://whatismyipaddress.com/):</td>
-                                     </tr></tbody>
-                                </table>
-                            </div>
+        <!-- End Leftbar -->
+        <!-- Start Rightbar -->
+        <div class="rightbar">
+            <!-- Start Topbar Mobile -->
+            <div class="topbar-mobile">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="mobile-logobar">
+                            <a href="index.html" class="mobile-logo"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="mobile-togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="topbar-toggle-icon">
+                                        <a class="topbar-toggle-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/horizontal.svg" class="img-fluid menu-hamburger-horizontal" alt="horizontal">
+                                            <img src="assets/images/svg-icon/verticle.svg" class="img-fluid menu-hamburger-vertical" alt="verticle">
+                                         </a>
+                                     </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/collapse.svg" class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                            <img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
+                                         </a>
+                                     </div>
+                                </li>                                
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-lg-0">
-                                <h5 class="mt-0 mb-3">Уточнение данных платежа</h5>
-                                <table class="table table-bordered m-0">
-                                    <thead><tr>
-                                        <th style="width: 50%;">
-                                        <i class="ti-file"></i>🇬🇧 - Английский</th>
-                                        <th>🇩🇪 - Немецкий</th>
-                                    </tr></thead>
-                                    <tbody><tr>
-                                        <td>1. What payment method did you use? <br>2. Your E-Mail  (which you used for payment)<br>3. Payment amount
-                                        <td>1. Welche Zahlungsmethode haben Sie verwendet?<br>2. Ihre E-Mail (die Sie für die Zahlung verwendet haben)<br>3. Zahlungsbetrag
-                                     </tr></tbody>
-                                </table>
-                            </div>
+            </div>
+            <!-- Start Topbar -->
+            <div class="topbar">
+                <!-- Start row -->
+                <div class="row align-items-center">
+                    <!-- Start col -->
+                    <div class="col-md-12 align-self-center">
+                        <div class="togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                           <img src="assets/images/svg-icon/collapse.svg" class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                           <img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
+                                         </a>
+                                     </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="searchbar">
+                                        <form>
+                                            <div class="input-group">
+                                              <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                                              <div class="input-group-append">
+                                                <button class="btn" type="submit" id="button-addon2"><img src="assets/images/svg-icon/search.svg" class="img-fluid" alt="search"></button>
+                                              </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-lg-0">
-                                <h5 class="mt-0 mb-3">Ошибка сервером или ID при пополнении</h5>
-                                <table class="table table-bordered m-0">
-                                    <thead><tr>
-                                        <th style="width: 50%;">
-                                        <i class="ti-file"></i>🇬🇧 - Английский</th>
-                                        <th>🇩🇪 - Немецкий</th>
-                                    </tr></thead>
-                                    <tbody><tr>
-                                        <td>You entered the wrong ID.<br>Transferred the Grand Coins to your account.</td>
-                                        <td>Sie haben die falsche ID eingegeben.<br>Überweisung der Grand Coins auf Ihr Konto.</td>
-                                     </tr></tbody>
-                                </table>
-                            </div>
-                        </div>
+                </div> 
+            </div>
+                 
+            <div class="breadcrumbbar">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-lg-8">
                     </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-lg-0">
-                                <h5 class="mt-0 mb-3">Проверим баг, если есть - исправим в обновлении</h5>
-                                <table class="table table-bordered m-0">
-                                    <thead><tr>
-                                        <th style="width: 50%;">
-                                        <i class="ti-file"></i>🇬🇧 - Английский</th>
-                                        <th>🇩🇪 - Немецкий</th>
-                                    </tr></thead>
-                                    <tbody><tr>
-                                        <td>We'll check if there is a bug - we'll fix it in the next update.</td>
-                                        <td>Wir werden prüfen, ob ein Fehler vorliegt - wir werden ihn im nächsten Update beheben.</td>
-                                     </tr></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-lg-0">
-                                <h5 class="mt-0 mb-3">Если у игрока слетел дом за неуплату</h5>
-                                <table class="table table-bordered m-0">
-                                    <thead><tr>
-                                        <th style="width: 50%;">
-                                        <i class="ti-file"></i>🇬🇧 - Английский</th>
-                                        <th>🇩🇪 - Немецкий</th>
-                                    </tr></thead>
-                                    <tbody><tr>
-                                        <td>Your house was last paid for <strong>2022-XX-XX</strong>, payment was made <strong>X</strong> days in advance.<br>After that, the days were over. The house was sold to the state.</td>
-                                        <td>Ihr Haus wurde zuletzt für <strong>2022-XX-XX</strong> bezahlt, die Zahlung erfolgte <strong>X</strong> Tage im Voraus.<br>Danach waren die Tage vorbei. Das Haus wurde an den Staat verkauft.</td>
-                                     </tr></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-lg-0">
-                                <h5 class="mt-0 mb-3">Не возвращаем вещи если они были в шкафу дома, который слетел</h5>
-                                <table class="table table-bordered m-0">
-                                    <thead><tr>
-                                        <th style="width: 50%;">
-                                        <i class="ti-file"></i>🇬🇧 - Английский</th>
-                                        <th>🇩🇪 - Немецкий</th>
-                                    </tr></thead>
-                                    <tbody><tr>
-                                        <td>If the house is sold to the state for non-payment, the items left in the closets are non-refundable.</td>
-                                        <td>Wenn das Haus wegen Nichtzahlung an den Staat verkauft wird, werden die in den Schränken befindlichen Gegenstände nicht zurückgegeben.</td>
-                                     </tr></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="p-lg-0">
-                                <h5 class="mt-0 mb-3">Когда сервер лагает или не работает</h5>
-                                <table class="table table-bordered m-0">
-                                    <thead><tr>
-                                        <th style="width: 50%;">
-                                        <i class="ti-file"></i>🇬🇧 - Английский</th>
-                                        <th>🇩🇪 - Немецкий</th>
-                                    </tr></thead>
-                                    <tbody><tr>
-                                        <td>The difficulties caused by the unprecedented load on the server has affected some players, we are very sorry you had to face them.<br>We are already working on restoring full access to the servers.<br>We will try to rectify the situation as soon as possible.</td>
-                                        <td>Die Schwierigkeiten, die durch die noch nie dagewesene Belastung des Servers verursacht wurden, haben einige Spieler betroffen, es tut uns sehr leid, dass ihr damit konfrontiert wurdet.<br>Wir arbeiten bereits daran, den vollen Zugang zu den Servern wiederherzustellen.<br>Wir werden versuchen, die Situation so schnell wie möglich zu bereinigen.</td>
-                                     </tr></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                </div>          
             </div>
 
-            The difficulties caused by the unprecedented load on the server has affected some players, we are very sorry you had to face them. We are already working on restoring full access to the servers. We will try to rectify the situation as soon as possible.
+            <div class="contentbar">                
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12">
+                        <div class="text-center mt-0 mb-5">
+                            <h4>Быстрые ответы</h4>
+                        </div>
+                    </div>
 
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <script>document.write(new Date().getFullYear())</script> © Grand RolePlay.
+                    <div class="col-lg-12 col-xl-6">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h4 class="card-title">Английский</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="accordion" id="accordionwithicon">
+                                    <div class="card">
+                                        <div class="card-header" id="EN1">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><i class="feather icon-info mr-2"></i>Запрос данных</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse1" class="collapse show" aria-labelledby="EN1" data-parent="#accordionwithicon">
+                                            <div class="card-body" id="text1">Hello. To check, we need the following data:<br>
+- ID or Nick-Name:<br>
+- E-Mail:<br>
+- Social Club login:<br>
+- IPv4 (From here: https://whatismyipaddress.com/):</div>
+                                            <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text1')">Скопировать текст</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="EN2">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="feather icon-credit-card mr-2"></i>Уточнение деталей платежа</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse2" class="collapse" aria-labelledby="EN2" data-parent="#accordionwithicon">
+                                            <div class="card-body" id="text2">1. What payment method did you use?:
+<br>2. Your E-Mail (which you used for payment):
+<br>3. Payment amount:</div>
+                                            <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2')">Скопировать текст</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="EN3">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"><i class="feather icon-shuffle mr-2"></i>Ошибка сервером или ID при пополнении</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse3" class="collapse" aria-labelledby="EN3" data-parent="#accordionwithicon">
+                                            <div class="card-body" id="text3">You entered the wrong ID.
+<br>Transferred the Grand Coins to your account.</div>
+                                            <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text3')">Скопировать текст</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="EN4">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"><i class="feather icon-thumbs-up mr-2"></i>Проверим баг, если есть - исправим в обновлении</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse4" class="collapse" aria-labelledby="EN4" data-parent="#accordionwithicon">
+                                            <div class="card-body" id="text4">We'll check if there is a bug - we'll fix it in the next update.</div>
+                                            <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text4')">Скопировать текст</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="EN5">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"><i class="feather icon-home mr-2"></i>Если у игрока слетел дом за неуплату</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse5" class="collapse" aria-labelledby="EN5" data-parent="#accordionwithicon">
+                                            <div class="card-body" id="text5">Your house was last paid for <strong>2022-XX-XX</strong>, payment was made <strong>X</strong> days in advance.
+<br>After that, the days were over. The house was sold to the state.</div>
+                                            <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text5')">Скопировать текст</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="EN6">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"><i class="feather icon-archive mr-2"></i>Не возвращаем вещи если они были в шкафу дома, который слетел</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse6" class="collapse" aria-labelledby="EN6" data-parent="#accordionwithicon">
+                                            <div class="card-body" id="text6">If the house is sold to the state for non-payment, the items left in the closets are non-refundable.</div>
+                                            <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text6')">Скопировать текст</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="EN7">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7"><i class="feather icon-server mr-2"></i>Когда сервер лагает или не работает</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse7" class="collapse" aria-labelledby="EN7" data-parent="#accordionwithicon">
+                                            <div class="card-body" id="text7">The difficulties caused by the unprecedented load on the server has affected some players, we are very sorry you had to face them.
+<br>We are already working on restoring full access to the servers.
+<br>We will try to rectify the situation as soon as possible.</div>
+                                            <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text7')">Скопировать текст</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-xl-6">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h4 class="card-title">Немецкий</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="accordion" id="accordionwithicon2">
+                                    <div class="card">
+                                        <div class="card-header" id="DE1">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1DE" aria-expanded="true" aria-controls="collapse1DE"><i class="feather icon-info mr-2"></i>Запрос данных</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse1DE" class="collapse show" aria-labelledby="DE1" data-parent="#accordionwithicon2">
+                                            <div class="card-body">Hallo. Um das zu überprüfen, benötigen wir die folgenden Daten:<br>- ID oder Nick-Name:<br>- E-Mail:<br>- Social Club login:<br>- IPv4 (From here: https://whatismyipaddress.com/):</div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="DE2">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2DE" aria-expanded="false" aria-controls="collapse2DE"><i class="feather icon-credit-card mr-2"></i>Уточнение деталей платежа</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse2DE" class="collapse" aria-labelledby="DE2" data-parent="#accordionwithicon2">
+                                            <div class="card-body">1. Welche Zahlungsmethode haben Sie verwendet?:<br>2. Ihre E-Mail (die Sie für die Zahlung verwendet haben):<br>3. Zahlungsbetrag:</div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="DE3">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3DE" aria-expanded="false" aria-controls="collapse3DE"><i class="feather icon-shuffle mr-2"></i>Ошибка сервером или ID при пополнении</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse3DE" class="collapse" aria-labelledby="DE3" data-parent="#accordionwithicon2">
+                                            <div class="card-body">Sie haben die falsche ID eingegeben.<br>Überweisung der Grand Coins auf Ihr Konto.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="DE4">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4DE" aria-expanded="false" aria-controls="collapse4DE"><i class="feather icon-thumbs-up mr-2"></i>Проверим баг, если есть - исправим в обновлении</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse4DE" class="collapse" aria-labelledby="DE4" data-parent="#accordionwithicon2">
+                                            <div class="card-body">Wir werden prüfen, ob ein Fehler vorliegt - wir werden ihn im nächsten Update beheben.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="DE5">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5DE" aria-expanded="false" aria-controls="collapse5DE"><i class="feather icon-home mr-2"></i>Если у игрока слетел дом за неуплату</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse5DE" class="collapse" aria-labelledby="DE5" data-parent="#accordionwithicon2">
+                                            <div class="card-body">Ihr Haus wurde zuletzt für <strong>2022-XX-XX</strong> bezahlt, die Zahlung erfolgte <strong>X</strong> Tage im Voraus.<br>Danach waren die Tage vorbei. Das Haus wurde an den Staat verkauft.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="DE6">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6DE" aria-expanded="false" aria-controls="collapse6DE"><i class="feather icon-archive mr-2"></i>Не возвращаем вещи если они были в шкафу дома, который слетел</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse6DE" class="collapse" aria-labelledby="DE6" data-parent="#accordionwithicon2">
+                                            <div class="card-body">Wenn das Haus wegen Nichtzahlung an den Staat verkauft wird, werden die in den Schränken befindlichen Gegenstände nicht zurückgegeben.</div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="DE7">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7DE" aria-expanded="false" aria-controls="collapse7DE"><i class="feather icon-server mr-2"></i>Когда сервер лагает или не работает</button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse7DE" class="collapse" aria-labelledby="DE7" data-parent="#accordionwithicon2">
+                                            <div class="card-body">Die Schwierigkeiten, die durch die noch nie dagewesene Belastung des Servers verursacht wurden, haben einige Spieler betroffen, es tut uns sehr leid, dass ihr damit konfrontiert wurdet.<br>Wir arbeiten bereits daran, den vollen Zugang zu den Servern wiederherzustellen.<br>Wir werden versuchen, die Situation so schnell wie möglich zu bereinigen.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
 
+            <div class="footerbar">
+                <footer class="footer">
+                    <p class="mb-0">© 2022 Grand RolePlay</p>
+                </footer>
+            </div>
         </div>
-    </div>
-    <script src="assets/libs/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metisMenu.min.js"></script>
-    <script src="assets/libs/simplebar.min.js"></script>
-    <script src="assets/libs/waves.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    </div>  
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/vertical-menu.js"></script>
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+    <script src="assets/js/core.js"></script>
 </body>
 </html>
