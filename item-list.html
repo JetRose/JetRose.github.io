@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site that will help you check the technical section">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Grand RolePlay | Technical HELP</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/plugins/footable/css/footable.bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="vertical-layout">
+    <div class="infobar-settings-sidebar-overlay"></div>
+    <div id="containerbar">
+        <div class="leftbar">
+            <div class="sidebar">
+                <div class="logobar">
+                    <a href="index.html" class="logo logo-large"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a>
+                    <a href="index.html" class="logo logo-small"><img src="assets/images/small_logo.png" class="img-fluid" alt="logo"></a>
+                </div>
+                <div class="navigationbar">
+                    <ul class="vertical-menu">
+                        <li>
+                            <a href="javaScript:void();">
+                              <img src="assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Главное</span><i class="feather icon-chevron-right pull-right"></i>
+                            </a>
+                            <ul class="vertical-submenu">
+                                <li><a href="index.html">Быстрые ответы</a></li>
+                                <li><a href="info.html">Информация</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javaScript:void();">
+                                <img src="assets/images/svg-icon/horizontal.svg" class="img-fluid" alt="basic"><span>Остальное</span><i class="feather icon-chevron-right pull-right"></i>
+                            </a>
+                            <ul class="vertical-submenu">
+                                <li><a href="item-list.html">Список вещей</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightbar">
+            <div class="topbar-mobile">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="mobile-logobar">
+                            <a href="index.html" class="mobile-logo"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="mobile-togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="topbar-toggle-icon">
+                                        <a class="topbar-toggle-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/horizontal.svg" class="img-fluid menu-hamburger-horizontal" alt="horizontal">
+                                            <img src="assets/images/svg-icon/verticle.svg" class="img-fluid menu-hamburger-vertical" alt="verticle">
+                                         </a>
+                                     </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/collapse.svg" class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                            <img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
+                                         </a>
+                                     </div>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topbar">
+                <div class="row align-items-center">
+                    <div class="col-md-12 align-self-center">
+                        <div class="togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                           <img src="assets/images/svg-icon/collapse.svg" class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                           <img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
+                                         </a>
+                                     </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="searchbar">
+                                        <form>
+                                            <div class="input-group">
+                                              <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                                              <div class="input-group-append">
+                                                <button class="btn" type="submit" id="button-addon2"><img src="assets/images/svg-icon/search.svg" class="img-fluid" alt="search"></button>
+                                              </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+                 
+            <div class="breadcrumbbar">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-lg-8">
+                    </div>
+                </div>          
+            </div>
+
+            <div class="contentbar">                
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-xl-12">
+                        <div class="text-center mt-0 mb-5">
+                            <h4>Список вещей интвентаря</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-12">
+                        <div class="card m-b-30">
+                            <div class="table-responsive">
+                                <table class="table foo-filtering-table" data-filtering="true">
+                                    <thead>
+                                    <tr>
+                                        <th data-breakpoints="xs">ID</th>
+                                        <th>Название</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2680</td>
+                                        <td>Меховая шуба с капюшоном</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2681</td>
+                                        <td>Кофта костюма Adidas (Neon)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2682</td>
+                                        <td>Меховая шуба без капюшона</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2683</td>
+                                        <td>Лонгслив костюма Adidas (Neon)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2684</td>
+                                        <td>Олимпийка костюма Adidas (Neon)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2685</td>
+                                        <td>Свитшот новой коллекции</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2686</td>
+                                        <td>Свитер новой коллекции</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2687</td>
+                                        <td>Nike новой коллекции</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2688</td>
+                                        <td>Костюм курочки</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2689</td>
+                                        <td>Майка TSUM коллекция 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2690</td>
+                                        <td>Майка TSUM коллекция 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2691</td>
+                                        <td>Майка TSUM коллекция 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2692</td>
+                                        <td>Chrome Hearts приспущенные джинсы</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2693</td>
+                                        <td>Спортивные штаны костюма Adidas (Neon)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2694</td>
+                                        <td>Штаны новой коллекции Nike</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2695</td>
+                                        <td>RBG неоновые ботинки 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2696</td>
+                                        <td>RBG неоновые ботинки 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2697</td>
+                                        <td>Rainbow неоновые ботинки</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2698</td>
+                                        <td>Меховые тапочки Хлебная корочка</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2699</td>
+                                        <td>Nike Zoom Freak 1 Multi-Color</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2700</td>
+                                        <td>Curry Flow 8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2701</td>
+                                        <td>Q4 MB Toy Story</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2702</td>
+                                        <td>Air Jordan 34 Caution</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2703</td>
+                                        <td>Adidas Pro Model</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2704</td>
+                                        <td>Air Force 1 x Travis Scott</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2705</td>
+                                        <td>Dr. Rat Lab</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2706</td>
+                                        <td>Игрушечный AK-47</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2707</td>
+                                        <td>Diploma Dog</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2708</td>
+                                        <td>Festival Dog</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2709</td>
+                                        <td>Неоновые катаны 2D</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2710</td>
+                                        <td>Катана на пояс</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2711</td>
+                                        <td>Неоновая катана на пояс</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2712</td>
+                                        <td>Боксёрские перчатки</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2713</td>
+                                        <td>Часы Patek Philippe Two Crown</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2714</td>
+                                        <td>Часы Casio</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2715</td>
+                                        <td>Часы Casio G-SHOCK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2716</td>
+                                        <td>Часы Patek Philippe</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2717</td>
+                                        <td>Шлем для бокса</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2718</td>
+                                        <td>Cloud Devil Holo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2719</td>
+                                        <td>LED Маска</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2720</td>
+                                        <td>Маска пришельца с неоновыми глазами</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2721</td>
+                                        <td>Маска Аниме</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2722</td>
+                                        <td>Маска Утки</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2723</td>
+                                        <td>Маска Свина</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2724</td>
+                                        <td>Маска Петуха</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2725</td>
+                                        <td>Меховая маска для сна</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2726</td>
+                                        <td>Парная майка</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2727</td>
+                                        <td>Маска с эффектом переливания</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2728</td>
+                                        <td>Маска смайлик с сердечками</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2729</td>
+                                        <td>Кольцо PlayBoy</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2730</td>
+                                        <td>Наушники сердечко</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2731</td>
+                                        <td>Корона купидона</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2732</td>
+                                        <td>Hearts pride</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+            <div class="footerbar">
+                <footer class="footer">
+                    <p class="mb-0">© 2022 Grand RolePlay</p>
+                </footer>
+            </div>
+        </div>
+    </div>  
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/vertical-menu.js"></script>
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+    <script src="assets/js/core.js"></script>
+
+    <script src="assets/plugins/moment/moment.js"></script>     
+    <script src="assets/plugins/footable/js/footable.min.js"></script>     
+    <script src="assets/js/custom/custom-table-footable.js"></script>    
+</body>
+</html>
