@@ -155,11 +155,10 @@ code {
 }
 
 .logobar {
-  padding: 15px 0 15px 60px;
-  margin-bottom: 30px;
+  padding: 15px 0;
+  margin-bottom: 15px;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-  background-color: #ffffff;
 }
 .logobar .logo.logo-small {
   display: none;
@@ -169,24 +168,24 @@ code {
 }
 
 .leftbar {
-  width: 280px;
+  width: 250px;
   height: 100%;
   position: fixed;
-  background: transparent;
-  border-right: none;
+  background: #ffffff;
+  border-right: 1px solid rgba(0, 0, 0, 0.03);
   z-index: 9;
   transition: all 0.3s ease;
 }
 
 .rightbar {
-  margin-left: 280px;
+  margin-left: 250px;
   overflow: hidden;
   min-height: 500px;
   transition: all 0.3s ease;
 }
 
 .contentbar {
-  padding: 30px 60px 30px 30px;
+  padding: 30px;
   margin-bottom: 30px;
 }
 
@@ -194,12 +193,10 @@ code {
   position: absolute;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: 250px;
   padding: 20px 30px;
   text-align: center;
   background-color: #ffffff;
-  border-top: 1px solid rgba(0, 0, 0, 0.03);
-  z-index: 9;
   background-color: #ffffff;
 }
 
@@ -212,14 +209,10 @@ code {
 }
 
 .navigationbar {
-  height: calc(100vh - 190px);
+  height: calc(100vh - 100px);
   overflow: auto;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  margin-left: 60px;
-  background-color: #ffffff;
-  border-radius: 3px;
-  padding: 15px 0;
 }
 
 ::-webkit-scrollbar {
@@ -26474,7 +26467,7 @@ mark {
   padding: 0;
 }
 .vertical-menu > li > a {
-  padding: 10px 22px;
+  padding: 10px 30px;
   display: block;
   color: #263a5b;
 }
@@ -26565,7 +26558,7 @@ mark {
   padding-left: 15px;
 }
 .vertical-menu .vertical-submenu > li > a {
-  padding: 8px 20px 8px 45px;
+  padding: 8px 25px 8px 55px;
   display: block;
   font-size: 14px;
   color: #263a5b;
@@ -26620,7 +26613,7 @@ mark {
   padding: 0;
 }
 .vertical-menu-rtl > li > a {
-  padding: 22px 10px;
+  padding: 30px 10px;
   display: block;
   color: #263a5b;
 }
@@ -26710,7 +26703,7 @@ mark {
   padding-right: 15px;
 }
 .vertical-menu-rtl .vertical-submenu > li > a {
-  padding: 8px 45px 8px 20px;
+  padding: 8px 45px 8px 55px;
   display: block;
   font-size: 14px;
   color: #263a5b;
@@ -26761,15 +26754,15 @@ mark {
 */
 .toggle-menu .leftbar {
   position: fixed;
-  width: 280px;
+  width: 250px;
   margin-left: 0;
   transition: all 0.3s ease;
 }
 .toggle-menu .rightbar {
-  margin-left: 140px;
+  margin-left: 80px;
 }
 .toggle-menu .rightbar .topbar {
-  left: 110px;
+  left: 80px;
 }
 
 .topbar-mobile {
@@ -26829,7 +26822,7 @@ mark {
 
 .topbar {
   background-color: #ffffff;
-  padding: 15px 60px;
+  padding: 15px 30px;
   position: fixed;
   z-index: 1;
   left: 250px;
@@ -26960,15 +26953,15 @@ mark {
 }
 
 .breadcrumbbar {
-  margin: 100px 60px 0 30px;
-  padding: 0;
-  background-color: transparent;
+  margin: 100px 30px 0 30px;
+  padding: 20px;
+  background-color: #ffffff;
   border-radius: 3px;
 }
 .breadcrumbbar .page-title {
   font-size: 18px;
   color: #263a5b;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   margin-top: 0;
 }
 .breadcrumbbar .breadcrumb-list {
@@ -33993,6 +33986,10 @@ table.focus-on tfoot tr.focused td {
   content: "";
   font-family: "feather" !important;
 }
+.footable-filtering .input-group-btn .fooicon-remove:before {
+  content: "";
+  font-family: "feather" !important;
+}
 
 /* 
 -----------------------------
@@ -34683,27 +34680,19 @@ table.focus-on tfoot tr.focused td {
   h6 {
     font-size: 16px;
   }
-
-  .topbar .searchbar {
-    display: none;
-  }
-
-  .togglebar .menubar {
-    margin-top: 9px;
-  }
 }
 @media (min-width: 768px) {
   .vertical-layout.toggle-menu .leftbar {
     position: fixed;
-    width: 140px;
+    width: 80px;
     margin-left: 0;
     transition: all 0.3s ease;
   }
   .vertical-layout.toggle-menu .leftbar:hover {
-    width: 280px;
+    width: 250px;
   }
   .vertical-layout.toggle-menu .leftbar:hover ~ .rightbar {
-    margin-left: 280px;
+    margin-left: 250px;
   }
   .vertical-layout.toggle-menu .leftbar:hover .vertical-menu > li > a > span {
     display: inline-block;
@@ -34743,9 +34732,6 @@ table.focus-on tfoot tr.focused td {
   }
   .vertical-layout.toggle-menu .vertical-menu > li > a > i {
     font-size: 18px;
-  }
-  .vertical-layout.toggle-menu .vertical-menu > li > a {
-    padding: 10px 30px;
   }
   .vertical-layout.toggle-menu .vertical-menu > li > a > span {
     display: none;
@@ -34800,7 +34786,7 @@ table.focus-on tfoot tr.focused td {
 
   .leftbar {
     position: fixed;
-    margin-left: -280px;
+    margin-left: -250px;
   }
 
   .rightbar {
@@ -34831,27 +34817,10 @@ table.focus-on tfoot tr.focused td {
     left: 0;
     z-index: 1;
     margin-top: 71px;
-    padding: 15px 30px;
   }
 
   .menubar {
     text-align: right;
-  }
-
-  .toggle-menu .leftbar {
-    width: 250px;
-  }
-
-  .logobar {
-    padding: 15px 0 15px 30px;
-  }
-
-  .navigationbar {
-    margin-left: 30px;
-  }
-
-  .contentbar {
-    padding: 30px 30px 30px 30px;
   }
 
   .footerbar {
@@ -34865,7 +34834,7 @@ table.focus-on tfoot tr.focused td {
 
   .breadcrumbbar {
     margin: 100px 0 0 0;
-    padding: 0;
+    padding: 20px 0 20px 0;
   }
   .breadcrumbbar .page-title {
     text-align: center;

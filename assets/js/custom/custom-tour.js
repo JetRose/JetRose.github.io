@@ -5,7 +5,7 @@
 */
 "use strict";
 $(document).ready(function() {    
-    var tours = new ProductTour({
+  	var tours = new ProductTour({
         overlay: !0,
         onStart: function() {
             

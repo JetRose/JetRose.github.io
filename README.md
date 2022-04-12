@@ -1,2 +1,0 @@
-# JetRose.github.io
-Technical

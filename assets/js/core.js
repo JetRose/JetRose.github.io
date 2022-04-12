@@ -85,4 +85,4 @@ function copytext(el) {
     $tmp.val($(el).text()).select();
     document.execCommand("copy");
     $tmp.remove();
-}    
+}

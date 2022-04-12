@@ -27,29 +27,19 @@
   h6 {
     font-size: 16px; 
   }   
-  .topbar {
-    .searchbar {
-      display: none;
-    }
-  }
-  .togglebar {
-    .menubar {
-      margin-top: 9px;
-    }
-  }
 }
 @media (min-width: 768px) {  
   .vertical-layout {
     &.toggle-menu {
       .leftbar {
           position: fixed;
-          width: 140px;
+          width: 80px;
           margin-left: 0;
           transition: all 0.3s ease;
           &:hover {
-            width: 280px; 
+            width: 250px; 
             &~ .rightbar {
-                margin-left: 280px;
+                margin-left: 250px;
             }
             .vertical-menu > li > a > span {
                 display: inline-block;
@@ -96,9 +86,6 @@
       }      
       .vertical-menu > li > a > i {
           font-size: 18px;
-      }
-      .vertical-menu > li > a {
-          padding: 10px 30px;
       }
       .vertical-menu > li > a > span {
           display: none;
@@ -152,7 +139,7 @@
   } 
   .leftbar {
      position:fixed;
-     margin-left: -280px;
+     margin-left: -250px;
   }  
   .rightbar {
     margin-left: 0 !important;
@@ -179,24 +166,9 @@
     left: 0;
     z-index: 1;
     margin-top: 71px;
-    padding: 15px 30px;
   }
   .menubar {
       text-align: right;
-  }
-  .toggle-menu {
-    .leftbar {
-      width: 250px;
-    }
-  }
-  .logobar {
-    padding: 15px 0 15px 30px;
-  }
-  .navigationbar {
-    margin-left: 30px;
-  }
-  .contentbar {
-    padding: 30px 30px 30px 30px;
   }
   .footerbar {
       left: 0;
@@ -213,7 +185,7 @@
   }
   .breadcrumbbar {
     margin: 100px 0 0 0;
-    padding: 0;
+    padding: 20px 0 20px 0;
     .page-title {
       text-align: center;
       margin-bottom: 10px;

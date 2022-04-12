@@ -138,25 +138,20 @@ $(document).ready(function() {
             sparkline: {
                 enabled: true
             }
-        }
-        ,
+        },
         stroke: {
             curve: "smooth", 
             width: 3
-        }
-        ,
+        },
         fill: {
             opacity: .05
-        }
-        ,
+        },
         series:[ {
             data: [15, 8, 12, 6, 10, 16, 5, 11, 6]
-        }
-        ],
+        }],
         yaxis: {
             min: 0
-        }
-        ,
+        },
         colors:["#0080ff"],
         grid: {
             row: {
