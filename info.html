@@ -8,6 +8,7 @@
         <title>Grand RolePlay | Technical HELP</title>
         <link rel="shortcut icon" href="assets/images/favicon.ico">
         <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet">
+        <link href="assets/plugins/pnotify/css/pnotify.custom.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
         <link href="assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
@@ -15,7 +16,6 @@
     </head>
 
     <body class="vertical-layout">
-        <div class="infobar-settings-sidebar-overlay"></div>
         <div id="containerbar">
             <div class="leftbar">
                 <div class="sidebar">
@@ -25,26 +25,10 @@
                     </div>
                     <div class="navigationbar">
                         <ul class="vertical-menu">
-                            <li>
-                                <a href="index.html">
-                                    <i class="fa fa-reply-all"></i><span>Быстрые ответы</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="info.html">
-                                    <i class="fa fa-reorder"></i><span>Информация</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="item-list.html">
-                                    <i class="fa fa-binoculars"></i><span>Список вещей</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="lang-list.html">
-                                    <i class="fa fa-language"></i><span>Список переводов</span>
-                                </a>
-                            </li>
+                            <li><a href="index.html"><i class="fa fa-reply-all"></i><span>Быстрые ответы</span></a></li>
+                            <li><a href="info.html"><i class="fa fa-reorder"></i><span>Информация</span></a></li>
+                            <li><a href="item-list.html"><i class="fa fa-binoculars"></i><span>Список вещей</span></a></li>
+                            <li><a href="lang-list.html"><i class="fa fa-language"></i><span>Список переводов</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -54,9 +38,7 @@
                 <div class="topbar-mobile">
                     <div class="row align-items-center">
                         <div class="col-md-12">
-                            <div class="mobile-logobar">
-                                <a href="index.html" class="mobile-logo"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a>
-                            </div>
+                            <div class="mobile-logobar"><a href="index.html" class="mobile-logo"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a></div>
                             <div class="mobile-togglebar">
                                 <ul class="list-inline mb-0">
                                     <li class="list-inline-item">
@@ -66,7 +48,7 @@
                                                 <img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
                                             </a>
                                         </div>
-                                    </li>                        
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -78,57 +60,97 @@
                     <a href="https://www.deepl.com/ru/translator" target="_blank"><button type="button" class="btn btn-primary"><i class="fa fa-language mr-2"></i> Переводчик</button></a>
                 </div>
                     
-                <div class="breadcrumbbar">
-                    <div class="row align-items-center">
-                        <div class="col-md-8 col-lg-8">
-                            <h4 class="page-title">Информация</h4>
-                        </div>
-                    </div>
-                </div>
+                <div class="breadcrumbbar"><div class="row align-items-center"><div class="col-md-8 col-lg-8"><h4 class="page-title">Информация</h4></div></div></div>
 
                 <div class="contentbar">                
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="card m-b-30">
-                                <div class="card-header">
-                                    <h4 class="card-title">Награды за ежедневный вход</h4>
-                                </div>
+                                <div class="card-header"><h4 class="card-title"><i class="feather icon-calendar mr-2"></i>Награды за ежедневный вход</h4></div>
                                 <div class="card-body">
-                                    <h6 class="card-subtitle">Строчка в логах:<br>
-                                    <strong>EN</strong> - daily login<br><strong>DE</strong> - Tägliche Belohnung<br><strong>ES</strong> - inicio de sesión diario<br><strong>RS</strong> - Dnevna prijava<br>
-                                    <strong>IT</strong> - accesso giornaliero<br><strong>FR</strong> - connexion quotidienne<br><strong>PT</strong> - login diário<br>
-                                    </h6>
-                                    <div class="accordion" id="accordionwithicon1">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">EN</th><th scope="col">DE</th><th scope="col">ES</th><th scope="col">RS</th><th scope="col">IT</th><th scope="col">FR</th><th scope="col">PT</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">daily login</th><td>Tägliche Belohnung</td><td>inicio de sesión diario</td><td>Dnevna prijava</td><td>accesso giornaliero</td><td>connexion quotidienne</td><td>login diário</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="accordion accordion-outline" id="accordionwithicon1">
                                         <div class="card">
                                             <div class="card-header" id="Menu1">
                                                 <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseOneicon"><i class="feather icon-list mr-2"></i>Список наград</button>
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseOneicon"><i class="feather icon-corner-left-down mr-2"></i>Список наград</button>
                                                 </h2>
                                             </div>
                                             <div id="collapse1" class="collapse" aria-labelledby="Menu1" data-parent="#accordionwithicon1">
                                                 <table class="table table-striped">
-                                                    <h6 class="card-subtitle"><br>Команда установки дней: <mark>/set_socialdays [Social Club login] [День] 0</mark></h6>
                                                     <tbody>
-                                                        <tr><th scope="row">1 День</th><td>$2.000</td><th scope="row">2 День</th><td>$2.500</td><th scope="row">3 День</th><td>$3.000</td>
-                                                        </tr><tr><th scope="row">4 День</th><td>$3.500</td><th scope="row">5 День</th><td>$4.000</td><th scope="row">6 День</th><td>$4.500</td>
-                                                        </tr><tr><th scope="row">7 День</th><td>$5.000</td><th scope="row">8 День</th><td>$5.500</td><th scope="row">9 День</th><td>$6.000</td>
-                                                        </tr><tr><th scope="row">10 День</th><td><strong>Футболка.</strong></td><th scope="row">11 День</th><td>$6.500</td><th scope="row">12 День</th><td>$7.000</td>
-                                                        </tr><tr><th scope="row">13 День</th><td>$7.500</td><th scope="row">14 День</th><td>$8.000</td><th scope="row">15 День</th><td>$8.500</td>
-                                                        </tr><tr><th scope="row">16 День</th><td>$9.000</td><th scope="row">17 День</th><td>$9.500</td><th scope="row">18 День</th><td>$10.000</td>
-                                                        </tr><tr><th scope="row">19 День</th><td>$10.500</td><th scope="row">20 День</th><td><strong>Футболка.</strong></td><th scope="row">21 День</th><td>$11.000</td>
-                                                        </tr><tr><th scope="row">22 День</th><td>$11.500</td><th scope="row">23 День</th><td>$12.000</td><th scope="row">24 День</th><td>$12.500</td>
-                                                        </tr><tr><th scope="row">25 День</th><td>$13.000</td><th scope="row">26 День</th><td>$13.500</td><th scope="row">27 День</th><td>$14.000</td>
-                                                        </tr><tr><th scope="row">28 День</th><td>$14.500</td><th scope="row">29 День</th><td>$15.000</td><th scope="row">30 День</th><td><strong>Маска.</strong></td>
-                                                        </tr><tr><th scope="row">31 День</th><td>$15.500</td><th scope="row">32 День</th><td>$16.000</td><th scope="row">33 День</th><td>$16.500</td>
-                                                        </tr><tr><th scope="row">34 День</th><td>$17.000</td><th scope="row">35 День</th><td>$17.500</td><th scope="row">36 День</th><td>$18.000</td>
-                                                        </tr><tr><th scope="row">37 День</th><td>$18.500</td><th scope="row">38 День</th><td>$19.000</td><th scope="row">39 День</th><td>$19.500</td>
-                                                        </tr><tr><th scope="row">40 День</th><td><strong>Худи.</strong></td><th scope="row">41 День</th><td>$20.000</td><th scope="row">42 День</th><td>$20.500</td>
-                                                        </tr><tr><th scope="row">43 День</th><td>$21.000</td><th scope="row">44 День</th><td>$21.500</td><th scope="row">45 День</th><td>$22.000</td>
-                                                        </tr><tr><th scope="row">46 День</th><td>$22.500</td><th scope="row">47 День</th><td>$23.000</td><th scope="row">48 День</th><td>$23.500</td>
-                                                        </tr><tr><th scope="row">49 День</th><td>$24.000</td><th scope="row">50 День</th><td><strong>Рюкзак.</strong></td><th scope="row">51 День</th><td>$24.500</td>
-                                                        </tr><tr><th scope="row">52 День</th><td>$25.000</td><th scope="row">53 День</th><td>$25.500</td><th scope="row">54 День</th><td>$26.000</td>
-                                                        </tr><tr><th scope="row">55 День</th><td>$26.500</td><th scope="row">56 День</th><td>$27.000</td><th scope="row">57 День</th><td>$27.500</td>
-                                                        </tr><tr><th scope="row">58 День</th><td>$28.000</td><th scope="row">59 День</th><td>$28.500</td><th scope="row">60 День</th><td><strong>Транспорт.</strong></td>
+                                                        <tr>
+                                                            <th scope="row">1 День</th><td>$2000</td></tr>
+                                                            <th scope="row">2 День</th><td>$2500</td></tr>
+                                                            <th scope="row">3 День</th><td>$3000</td></tr>
+                                                            <th scope="row">4 День</th><td>$3500</td></tr>
+                                                            <th scope="row">5 День</th><td>$4000</td></tr>
+                                                            <th scope="row">6 День</th><td>$4500</td></tr>
+                                                            <th scope="row">7 День</th><td>$5000</td></tr>
+                                                            <th scope="row">8 День</th><td>$5500</td></tr>
+                                                            <th scope="row">9 День</th><td>$6000</td></tr>
+                                                            <th scope="row">10 День</th><td><strong>Футболка.</strong></td></tr>
+                                                            <th scope="row">11 День</th><td>$6500</td></tr>
+                                                            <th scope="row">12 День</th><td>$7000</td></tr>
+                                                            <th scope="row">13 День</th><td>$7500</td></tr>
+                                                            <th scope="row">14 День</th><td>$8000</td></tr>
+                                                            <th scope="row">15 День</th><td>$8500</td></tr>
+                                                            <th scope="row">16 День</th><td>$9000</td></tr>
+                                                            <th scope="row">17 День</th><td>$9500</td></tr>
+                                                            <th scope="row">18 День</th><td>$10000</td></tr>
+                                                            <th scope="row">19 День</th><td>$10500</td></tr>
+                                                            <th scope="row">20 День</th><td><strong>Футболка.</strong></td></tr>
+                                                            <th scope="row">21 День</th><td>$11000</td></tr>
+                                                            <th scope="row">22 День</th><td>$11500</td></tr>
+                                                            <th scope="row">23 День</th><td>$12000</td></tr>
+                                                            <th scope="row">24 День</th><td>$12500</td></tr>
+                                                            <th scope="row">25 День</th><td>$13000</td></tr>
+                                                            <th scope="row">26 День</th><td>$13500</td></tr>
+                                                            <th scope="row">27 День</th><td>$14000</td></tr>
+                                                            <th scope="row">28 День</th><td>$14500</td></tr>
+                                                            <th scope="row">29 День</th><td>$15000</td></tr>
+                                                            <th scope="row">30 День</th><td><strong>Маска.</strong></td></tr>
+                                                            <th scope="row">31 День</th><td>$15500</td></tr>
+                                                            <th scope="row">32 День</th><td>$16000</td></tr>
+                                                            <th scope="row">33 День</th><td>$16500</td></tr>
+                                                            <th scope="row">34 День</th><td>$17000</td></tr>
+                                                            <th scope="row">35 День</th><td>$17500</td></tr>
+                                                            <th scope="row">36 День</th><td>$18000</td></tr>
+                                                            <th scope="row">37 День</th><td>$18500</td></tr>
+                                                            <th scope="row">38 День</th><td>$19000</td></tr>
+                                                            <th scope="row">39 День</th><td>$19500</td></tr>
+                                                            <th scope="row">40 День</th><td><strong>Худи.</strong></td></tr>
+                                                            <th scope="row">41 День</th><td>$20000</td></tr>
+                                                            <th scope="row">42 День</th><td>$20500</td></tr>
+                                                            <th scope="row">43 День</th><td>$21000</td></tr>
+                                                            <th scope="row">44 День</th><td>$21500</td></tr>
+                                                            <th scope="row">45 День</th><td>$22000</td></tr>
+                                                            <th scope="row">46 День</th><td>$22500</td></tr>
+                                                            <th scope="row">47 День</th><td>$23000</td></tr>
+                                                            <th scope="row">48 День</th><td>$23500</td></tr>
+                                                            <th scope="row">49 День</th><td>$24000</td></tr>
+                                                            <th scope="row">50 День</th><td><strong>Рюкзак.</strong></td></tr>
+                                                            <th scope="row">51 День</th><td>$24500</td></tr>
+                                                            <th scope="row">52 День</th><td>$25000</td></tr>
+                                                            <th scope="row">53 День</th><td>$25500</td></tr>
+                                                            <th scope="row">54 День</th><td>$26000</td></tr>
+                                                            <th scope="row">55 День</th><td>$26500</td></tr>
+                                                            <th scope="row">56 День</th><td>$27000</td></tr>
+                                                            <th scope="row">57 День</th><td>$27500</td></tr>
+                                                            <th scope="row">58 День</th><td>$28000</td></tr>
+                                                            <th scope="row">59 День</th><td>$28500</td></tr>
+                                                            <th scope="row">60 День</th><td><strong>Транспорт.</strong></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -139,34 +161,41 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="card m-b-30">
-                                <div class="card-header">
-                                    <h4 class="card-title">Награды за дневные инвестиции</h4>
-                                </div>
+                                <div class="card-header"><h4 class="card-title"><i class="feather icon-trending-up mr-2"></i>Награды за дневные инвестиции</h4></div>
                                 <div class="card-body">
-                                    <h6 class="card-subtitle">Строчка в логах:<br>
-                                    <strong>EN</strong> - daytime investments<br><strong>DE</strong> - Tagesinvestitionen<br><strong>ES</strong> - inversiones diurnas<br><strong>RS</strong> - dnevna ulaganja<br>
-                                    <strong>IT</strong> - investimenti diurni<br><strong>FR</strong> - investissements de jour<br><strong>PT</strong> - investimentos diurnos<br>
-                                    </h6>
-                                    <div class="accordion" id="accordionwithicon2">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">EN</th><th scope="col">DE</th><th scope="col">ES</th><th scope="col">RS</th><th scope="col">IT</th><th scope="col">FR</th><th scope="col">PT</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">daytime investments</th><td>Tagesinvestitionen</td><td>inversiones diurnas</td><td>dnevna ulaganja</td><td>investimenti diurni</td><td>investissements de jour</td><td>investimentos diurnos</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="accordion accordion-outline" id="accordionwithicon2">
                                         <div class="card">
                                             <div class="card-header" id="Menu2">
                                                 <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="feather icon-list mr-2"></i>Список наград</button>
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="feather icon-corner-left-down mr-2"></i>Список наград</button>
                                                 </h2>
                                             </div>
                                             <div id="collapse2" class="collapse" aria-labelledby="Menu2" data-parent="#accordionwithicon2">
                                                 <table class="table table-striped">
                                                     <tbody>
-                                                        <tr><th scope="row">1 Час</th><td>$10.000</td>
-                                                            </tr><th scope="row">2 Часа</th><td>$25.000</td>
-                                                            </tr><th scope="row">3 Часа</th><td>$40.000</td>
-                                                            </tr><th scope="row">4 Часа</th><td>$55.000</td>
-                                                            </tr><th scope="row">5 Часа</th><td>$75.000</td>
-                                                            </tr><th scope="row">6 Часов</th><td>$100.000</td>
-                                                            </tr><th scope="row">7 Часов</th><td>$125.000</td>
-                                                            </tr><th scope="row">8 Часов</th><td>$150.000</td>
+                                                        <tr>
+                                                            <th scope="row">1 Час</th><td>$10.000</td></tr>
+                                                            <th scope="row">2 Часа</th><td>$25.000</td></tr>
+                                                            <th scope="row">3 Часа</th><td>$40.000</td></tr>
+                                                            <th scope="row">4 Часа</th><td>$55.000</td></tr>
+                                                            <th scope="row">5 Часа</th><td>$75.000</td></tr>
+                                                            <th scope="row">6 Часов</th><td>$100.000</td></tr>
+                                                            <th scope="row">7 Часов</th><td>$125.000</td></tr>
+                                                            <th scope="row">8 Часов</th><td>$150.000</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -177,55 +206,63 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="card m-b-30">
-                                <div class="card-header">
-                                    <h4 class="card-title">Награды за долгосрочные инвестиции</h4>
-                                </div>
+                                <div class="card-header"><h4 class="card-title"><i class="feather icon-trending-up mr-2"></i>Награды за долгосрочные инвестиции</h4></div>
                                 <div class="card-body">
-                                    <h6 class="card-subtitle">Строчка в логах:<br>
-                                    <strong>EN</strong> - investments<br><strong>DE</strong> - Investitionen<br><strong>ES</strong> - Inversiones<br><strong>RS</strong> - investicije<br>
-                                    <strong>IT</strong> - investimenti<br><strong>FR</strong> - investissements<br><strong>PT</strong> - investimentos<br>
-                                    </h6>
-                                    <div class="accordion" id="accordionwithicon3">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">EN</th><th scope="col">DE</th><th scope="col">ES</th><th scope="col">RS</th><th scope="col">IT</th><th scope="col">FR</th><th scope="col">PT</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">investments</th><td>Investitionen</td><td>Inversiones</td><td>investicije</td><td>investimenti</td><td>investissements</td><td>investimentos</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="accordion accordion-outline" id="accordionwithicon3">
                                         <div class="card">
                                             <div class="card-header" id="Menu3">
                                                 <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"><i class="feather icon-list mr-2"></i>Список наград</button>
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"><i class="feather icon-corner-left-down mr-2"></i>Список наград</button>
                                                 </h2>
                                             </div>
                                             <div id="collapse3" class="collapse" aria-labelledby="Menu3" data-parent="#accordionwithicon3">
                                                 <table class="table table-striped">
                                                     <tbody>
-                                                            <tr><th scope="row">100 Часов</th><td>Стоимость $100.000</td><td>Награда $15.000</td>
-                                                            </tr><th scope="row">100 Часов</th><td>Стоимость $500.000</td><td>Награда $75.000</td>
-                                                            </tr><th scope="row">100 Часов</th><td>Стоимость $1.000.000</td><td>Награда $150.000</td>
-                                                            </tr><th scope="row">100 Часов</th><td>Стоимость $2.500.000</td><td>Награда $375.000</td>
-                                                            </tr><th scope="row">100 Часов</th><td>Стоимость $5.000.000</td><td>Награда $750.000</td>
-                                                            </tr><th scope="row"> </th><td> </td><td> </td>
-                                                            </tr><th scope="row">200 Часов</th><td>Стоимость $100.000</td><td>Награда $33.000</td>
-                                                            </tr><th scope="row">200 Часов</th><td>Стоимость $500.000</td><td>Награда $165.000</td>
-                                                            </tr><th scope="row">200 Часов</th><td>Стоимость $1.000.000</td><td>Награда $330.000</td>
-                                                            </tr><th scope="row">200 Часов</th><td>Стоимость $2.500.000</td><td>Награда $825.000</td>
-                                                            </tr><th scope="row">200 Часов</th><td>Стоимость $5.000.000</td><td>Награда $1.650.000</td>
-                                                            </tr><th scope="row"> </th><td> </td><td> </td>
-                                                            </tr><th scope="row">300 Часов</th><td>Стоимость $100.000</td><td>Награда $53.000</td>
-                                                            </tr><th scope="row">300 Часов</th><td>Стоимость $500.000</td><td>Награда $265.000</td>
-                                                            </tr><th scope="row">300 Часов</th><td>Стоимость $1.000.000</td><td>Награда $530.000</td>
-                                                            </tr><th scope="row">300 Часов</th><td>Стоимость $2.500.000</td><td>Награда $1.325.000</td>
-                                                            </tr><th scope="row">300 Часов</th><td>Стоимость $5.000.000</td><td>Награда $2.650.000</td>
-                                                            </tr><th scope="row"> </th><td> </td><td> </td>
-                                                            </tr><th scope="row">400 Часов</th><td>Стоимость $100.000</td><td>Награда $75.000</td>
-                                                            </tr><th scope="row">400 Часов</th><td>Стоимость $500.000</td><td>Награда $375.000</td>
-                                                            </tr><th scope="row">400 Часов</th><td>Стоимость $1.000.000</td><td>Награда $750.000</td>
-                                                            </tr><th scope="row">400 Часов</th><td>Стоимость $2.500.000</td><td>Награда $1.875.000</td>
-                                                            </tr><th scope="row">400 Часов</th><td>Стоимость $5.000.000</td><td>Награда $3.750.000</td>
-                                                            </tr><th scope="row"> </th><td> </td><td> </td>
-                                                            </tr><th scope="row">500 Часов</th><td>Стоимость $100.000</td><td>Награда $100.000</td>
-                                                            </tr><th scope="row">500 Часов</th><td>Стоимость $500.000</td><td>Награда $500.000</td>
-                                                            </tr><th scope="row">500 Часов</th><td>Стоимость $1.000.000</td><td>Награда $1.000.000</td>
-                                                            </tr><th scope="row">500 Часов</th><td>Стоимость $2.500.000</td><td>Награда $2.500.000</td>
-                                                            </tr><th scope="row">500 Часов</th><td>Стоимость $5.000.000</td><td>Награда $5.000.000</td>
+                                                        <tr>
+                                                            <th scope="row">100 Часов</th><td>Стоимость $100.000</td><td>Награда $15.000</td></tr>
+                                                            <th scope="row">100 Часов</th><td>Стоимость $500.000</td><td>Награда $75.000</td></tr>
+                                                            <th scope="row">100 Часов</th><td>Стоимость $1.000.000</td><td>Награда $150.000</td></tr>
+                                                            <th scope="row">100 Часов</th><td>Стоимость $2.500.000</td><td>Награда $375.000</td></tr>
+                                                            <th scope="row">100 Часов</th><td>Стоимость $5.000.000</td><td>Награда $750.000</td></tr>
+                                                            <th scope="row"> </th><td> </td><td> </td></tr>
+                                                            <th scope="row">200 Часов</th><td>Стоимость $100.000</td><td>Награда $33.000</td></tr>
+                                                            <th scope="row">200 Часов</th><td>Стоимость $500.000</td><td>Награда $165.000</td></tr>
+                                                            <th scope="row">200 Часов</th><td>Стоимость $1.000.000</td><td>Награда $330.000</td></tr>
+                                                            <th scope="row">200 Часов</th><td>Стоимость $2.500.000</td><td>Награда $825.000</td></tr>
+                                                            <th scope="row">200 Часов</th><td>Стоимость $5.000.000</td><td>Награда $1.650.000</td></tr>
+                                                            <th scope="row"> </th><td> </td><td> </td></tr>
+                                                            <th scope="row">300 Часов</th><td>Стоимость $100.000</td><td>Награда $53.000</td></tr>
+                                                            <th scope="row">300 Часов</th><td>Стоимость $500.000</td><td>Награда $265.000</td></tr>
+                                                            <th scope="row">300 Часов</th><td>Стоимость $1.000.000</td><td>Награда $530.000</td></tr>
+                                                            <th scope="row">300 Часов</th><td>Стоимость $2.500.000</td><td>Награда $1.325.000</td></tr>
+                                                            <th scope="row">300 Часов</th><td>Стоимость $5.000.000</td><td>Награда $2.650.000</td></tr>
+                                                            <th scope="row"> </th><td> </td><td> </td></tr>
+                                                            <th scope="row">400 Часов</th><td>Стоимость $100.000</td><td>Награда $75.000</td></tr>
+                                                            <th scope="row">400 Часов</th><td>Стоимость $500.000</td><td>Награда $375.000</td></tr>
+                                                            <th scope="row">400 Часов</th><td>Стоимость $1.000.000</td><td>Награда $750.000</td></tr>
+                                                            <th scope="row">400 Часов</th><td>Стоимость $2.500.000</td><td>Награда $1.875.000</td></tr>
+                                                            <th scope="row">400 Часов</th><td>Стоимость $5.000.000</td><td>Награда $3.750.000</td></tr>
+                                                            <th scope="row"> </th><td> </td><td> </td></tr>
+                                                            <th scope="row">500 Часов</th><td>Стоимость $100.000</td><td>Награда $100.000</td></tr>
+                                                            <th scope="row">500 Часов</th><td>Стоимость $500.000</td><td>Награда $500.000</td></tr>
+                                                            <th scope="row">500 Часов</th><td>Стоимость $1.000.000</td><td>Награда $1.000.000</td></tr>
+                                                            <th scope="row">500 Часов</th><td>Стоимость $2.500.000</td><td>Награда $2.500.000</td></tr>
+                                                            <th scope="row">500 Часов</th><td>Стоимость $5.000.000</td><td>Награда $5.000.000</td></tr>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -234,16 +271,12 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-                <div class="footerbar">
-                    <footer class="footer">
-                        <p class="mb-0">© 2022 Grand RolePlay</p>
-                    </footer>
                 </div>
+
+                <div class="footerbar"><footer class="footer"><p class="mb-0">© 2022 Grand RolePlay</p></footer></div>
             </div>
-        </div>  
+        </div>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
