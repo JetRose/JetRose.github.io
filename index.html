@@ -1,313 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content=" - ">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title>Grand RolePlay | Technical HELP</title>
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-        <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet">
-        <link href="assets/plugins/pnotify/css/pnotify.custom.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    </head>
-
-    <body class="vertical-layout">
-        <div id="containerbar">
-            <div class="leftbar">
-                <div class="sidebar">
-                    <div class="logobar">
-                        <a href="index.html" class="logo logo-large"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a>
-                        <a href="index.html" class="logo logo-small"><img src="assets/images/small_logo.png" class="img-fluid" alt="logo"></a>
-                    </div>
-                    <div class="navigationbar">
-                        <ul class="vertical-menu">
-                            <li><a href="index.html"><i class="fa fa-reply-all"></i><span>Быстрые ответы</span></a></li>
-                            <li><a href="info.html"><i class="fa fa-reorder"></i><span>Информация</span></a></li>
-                            <li><a href="item-list.html"><i class="fa fa-binoculars"></i><span>Список вещей</span></a></li>
-                            <li><a href="lang-list.html"><i class="fa fa-language"></i><span>Список переводов</span></a></li>
-                        </ul>
-                    </div>
-                </div>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grand RolePlay | Technical</title>
+    <link rel="stylesheet" href="assets/vendors/core/core.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/fonts/feather-font/css/iconfont.css">
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/demo_2/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="page-wrapper full-page">
+        <div class="page-content d-flex align-items-center justify-content-center">
+          <div class="row w-100 mx-0 auth-page">
+            <div class="col-md-8 col-xl-6 mx-auto d-flex flex-column align-items-center">
+              <img src="assets/images/logo.png" class="img-fluid mb-2" alt="404">
+              <h1 class="font-weight-bold mb-22 mt-2 tx-80 text-muted">404</h1>
+              <h4 class="mb-2">Запрашиваемая страница не была найдена.</h4>
             </div>
-
-            <div class="rightbar">
-                <div class="topbar-mobile">
-                    <div class="row align-items-center">
-                        <div class="col-md-12">
-                            <div class="mobile-logobar"><a href="index.html" class="mobile-logo"><img src="assets/images/logo.png" class="img-fluid" alt="logo"></a></div>
-                            <div class="mobile-togglebar">
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item">
-                                        <div class="menubar">
-                                            <a class="menu-hamburger" href="javascript:void();">
-                                                <img src="assets/images/svg-icon/collapse.svg" class="img-fluid menu-hamburger-collapse" alt="collapse">
-                                                <img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="topbar">
-                    <a href="https://gta5grand.com/forum/technical" target="_blank"><button type="button" class="btn btn-primary"><i class="fa fa-list-alt mr-2"></i> Технический раздел</button></a>
-                    <a href="https://www.deepl.com/ru/translator" target="_blank"><button type="button" class="btn btn-primary"><i class="fa fa-language mr-2"></i> Переводчик</button></a>
-                </div>
-
-                <div class="breadcrumbbar"><div class="row align-items-center"><div class="col-md-8 col-lg-8"><h4 class="page-title">Быстрые ответы</h4></div></div></div>
-
-                <div class="contentbar">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-xl-6">
-                            <div class="card m-b-30">
-                                <div class="card-header"><h4 class="card-title">Английский</h4></div>
-                                <div class="card-body">
-                                    <div class="accordion accordion-outline" id="accordionwithicon">
-                                        <div class="card">
-                                            <div class="card-header" id="EN1">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1"><i class="feather icon-info mr-2"></i>Запрос данных</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse1" class="collapse" aria-labelledby="EN1" data-parent="#accordionwithicon">
-                                                <div class="card-body" id="text1">Hello. To check, we need the following data:<br>
-- ID or Nick-Name:<br>
-- E-Mail:<br>
-- Social Club login (Learn more: www.tinyurl.com/mre8xfx9):<br>
-- IPv4 (From here: www.whatismyipaddress.com):</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text1')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="EN2">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="feather icon-credit-card mr-2"></i>Уточнение деталей платежа</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse2" class="collapse" aria-labelledby="EN2" data-parent="#accordionwithicon">
-                                                <div class="card-body" id="text2">1. What payment method did you use?:<br>
-2. Your E-Mail (which you used for payment):<br>
-3. Payment amount:</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="EN3">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3"><i class="feather icon-shuffle mr-2"></i>Ошибка сервером или ID при пополнении</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse3" class="collapse" aria-labelledby="EN3" data-parent="#accordionwithicon">
-                                                <div class="card-body" id="text3">You entered the wrong ID.<br>
-Transferred the Grand Coins to your account.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text3')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="EN4">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4"><i class="feather icon-thumbs-up mr-2"></i>Проверим баг, если есть - исправим в обновлении</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse4" class="collapse" aria-labelledby="EN4" data-parent="#accordionwithicon">
-                                                <div class="card-body" id="text4">We'll check if there is a bug - we'll fix it in the next update.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text4')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="EN5">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5"><i class="feather icon-home mr-2"></i>Если у игрока слетел дом за неуплату</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse5" class="collapse" aria-labelledby="EN5" data-parent="#accordionwithicon">
-                                                <div class="card-body" id="text5">Your house was last paid for <strong>2022-XX-XX</strong>, payment was made <strong>X</strong> days in advance.<br>
-After that, the days were over. The house was sold to the state.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text5')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="EN6">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6"><i class="feather icon-archive mr-2"></i>Не возвращаем вещи если они были в шкафу дома, который слетел</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse6" class="collapse" aria-labelledby="EN6" data-parent="#accordionwithicon">
-                                                <div class="card-body" id="text6">If the house is sold to the state for non-payment, the items left in the closets are non-refundable.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text6')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="EN7">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7"><i class="feather icon-mic mr-2"></i>Проблемы с микрофоном</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse7" class="collapse" aria-labelledby="EN7" data-parent="#accordionwithicon">
-                                                <div class="card-body" id="text7">The microphone works on the player's side.<br>
-- Increase the microphone radius. (F12 key by default)<br>
-- Set the settings as shown in the screenshot below.<br>
-[img]https://i.imgur.com/jidsqdf.png[/img]<br><br>
-
-If that didn't work, check out this article:<br>
-https://gta5grand.com/wiki/error-voice-chat-has-timed-out/</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text7')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="EN8">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8"><i class="feather icon-server mr-2"></i>Когда сервер лагает или не работает</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse8" class="collapse" aria-labelledby="EN8" data-parent="#accordionwithicon">
-                                                <div class="card-body" id="text8">The difficulties caused by the unprecedented load on the server has affected some players, we are very sorry you had to face them.<br>
-We are already working on restoring full access to the servers.<br>
-We will try to rectify the situation as soon as possible.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text8')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-12 col-xl-6">
-                            <div class="card m-b-30">
-                                <div class="card-header"><h4 class="card-title">Немецкий</h4></div>
-                                <div class="card-body">
-                                    <div class="accordion accordion-outline" id="accordionwithicon2">
-                                        <div class="card">
-                                            <div class="card-header" id="DE1">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse1DE" aria-expanded="false" aria-controls="collapse1DE"><i class="feather icon-info mr-2"></i>Запрос данных</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse1DE" class="collapse" aria-labelledby="DE1" data-parent="#accordionwithicon2">
-                                                <div class="card-body" id="text2_1">Hallo. Um das zu überprüfen, benötigen wir die folgenden Daten:<br>
-- ID oder Nick-Name:<br>
-- E-Mail:<br>
-- Social Club login (Mehr erfahren: www.tinyurl.com/mre8xfx9):<br>
-- IPv4 (Von hier aus: www.whatismyipaddress.com):</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2_1')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="DE2">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2DE" aria-expanded="false" aria-controls="collapse2DE"><i class="feather icon-credit-card mr-2"></i>Уточнение деталей платежа</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse2DE" class="collapse" aria-labelledby="DE2" data-parent="#accordionwithicon2">
-                                                <div class="card-body" id="text2_2">1. Welche Zahlungsmethode haben Sie verwendet?:<br>
-2. Ihre E-Mail (die Sie für die Zahlung verwendet haben):<br>
-3. Zahlungsbetrag:</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2_2')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="DE3">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3DE" aria-expanded="false" aria-controls="collapse3DE"><i class="feather icon-shuffle mr-2"></i>Ошибка сервером или ID при пополнении</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse3DE" class="collapse" aria-labelledby="DE3" data-parent="#accordionwithicon2">
-                                                <div class="card-body" id="text2_3">Sie haben die falsche ID eingegeben.<br>
-Überweisung der Grand Coins auf Ihr Konto.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2_3')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="DE4">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4DE" aria-expanded="false" aria-controls="collapse4DE"><i class="feather icon-thumbs-up mr-2"></i>Проверим баг, если есть - исправим в обновлении</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse4DE" class="collapse" aria-labelledby="DE4" data-parent="#accordionwithicon2">
-                                                <div class="card-body" id="text2_4">Wir werden prüfen, ob ein Fehler vorliegt - wir werden ihn im nächsten Update beheben.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2_4')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="DE5">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5DE" aria-expanded="false" aria-controls="collapse5DE"><i class="feather icon-home mr-2"></i>Если у игрока слетел дом за неуплату</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse5DE" class="collapse" aria-labelledby="DE5" data-parent="#accordionwithicon2">
-                                                <div class="card-body" id="text2_5">Ihr Haus wurde zuletzt für <strong>2022-XX-XX</strong> bezahlt, die Zahlung erfolgte <strong>X</strong> Tage im Voraus.<br>
-Danach waren die Tage vorbei. Das Haus wurde an den Staat verkauft.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2_5')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="DE6">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6DE" aria-expanded="false" aria-controls="collapse6DE"><i class="feather icon-archive mr-2"></i>Не возвращаем вещи если они были в шкафу дома, который слетел</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse6DE" class="collapse" aria-labelledby="DE6" data-parent="#accordionwithicon2">
-                                                <div class="card-body" id="text2_6">Wenn das Haus wegen Nichtzahlung an den Staat verkauft wird, werden die in den Schränken befindlichen Gegenstände nicht zurückgegeben.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2_6')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="DE7">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7DE" aria-expanded="false" aria-controls="collapse7DE"><i class="feather icon-mic mr-2"></i>Проблемы с микрофоном</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse7DE" class="collapse" aria-labelledby="DE7" data-parent="#accordionwithicon2">
-                                                <div class="card-body" id="text2_7">Das Mikrofon befindet sich auf der Seite des Spielers.<br>
-- Erhöhen Sie den Mikrofonradius. (Standardmäßig Taste F12)<br>
-- Nehmen Sie die Einstellungen wie in der folgenden Abbildung gezeigt vor.<br>
-[img]https://i.imgur.com/jidsqdf.png[/img]<br><br>
-
-Wenn das nicht funktioniert hat, lesen Sie diesen Artikel:<br>
-https://gta5grand.com/wiki/de/oshibka-voice-chat-has-timed-out-3/</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2_7')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header" id="DE8">
-                                                <h2 class="mb-0">
-                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8DE" aria-expanded="false" aria-controls="collapse8DE"><i class="feather icon-server mr-2"></i>Когда сервер лагает или не работает</button>
-                                                </h2>
-                                            </div>
-                                            <div id="collapse8DE" class="collapse" aria-labelledby="DE8" data-parent="#accordionwithicon2">
-                                                <div class="card-body" id="text2_8">Die Schwierigkeiten, die durch die noch nie dagewesene Belastung des Servers verursacht wurden, haben einige Spieler betroffen, es tut uns sehr leid, dass ihr damit konfrontiert wurdet.<br>
-Wir arbeiten bereits daran, den vollen Zugang zu den Servern wiederherzustellen.<br>
-Wir werden versuchen, die Situation so schnell wie möglich zu bereinigen.</div>
-                                                <div class="text-center mb-2"><button class="btn btn-outline-primary" onclick = "copytext('#text2_8')">Скопировать текст</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footerbar"><footer class="footer"><p class="mb-0">© 2022 Grand RolePlay</p></footer></div>
-            </div>
+          </div>
         </div>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/modernizr.min.js"></script>
-        <script src="assets/js/detect.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-        <script src="assets/js/vertical-menu.js"></script>
-        <script src="assets/plugins/switchery/switchery.min.js"></script>
-        <script src="assets/plugins/pnotify/js/pnotify.custom.min.js"></script>
-        <script src="assets/js/core.js"></script>
-        <script src="assets/js/custom/custom-toasts.js"></script>
-    </body>
-</html>
+      </div>
+    </div>
+    <script src="assets/vendors/core/core.js"></script>
+    <script src="assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="assets/vendors/jquery.flot/jquery.flot.js"></script>
+    <script src="assets/vendors/jquery.flot/jquery.flot.resize.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="assets/vendors/feather-icons/feather.min.js"></script>
+    <script src="assets/js/template.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/copy.js"></script>
+  </body>
+</html>    
