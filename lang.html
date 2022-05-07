@@ -35,7 +35,21 @@
               <a href="index.html" class="nav-link"><i class="link-icon" data-feather="briefcase"></i><span class="link-title">Список вещей</span></a>
             </li>
             <li class="nav-item">
-              <a href="lang.html" class="nav-link"><i class="link-icon" data-feather="globe"></i><span class="link-title">Список переводов</span></a>
+              <a class="nav-link" data-toggle="collapse" href="#lang" role="button" aria-expanded="false" aria-controls="lang">
+                <i class="link-icon" data-feather="globe"></i>
+                <span class="link-title">Список переводов</span>
+                <i class="link-arrow" data-feather="chevron-down"></i>
+              </a>
+              <div class="collapse" id="lang">
+                <ul class="nav sub-menu">
+                  <li class="nav-item">
+                    <a href="lang.html" class="nav-link">Money Logs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Items Logs</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -43,7 +57,7 @@
       <div class="page-wrapper">
         <div class="page-content">
           <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-            <div><h4 class="mb-3 mb-md-0">Список переводов [Money Log]</h4></div>
+            <div><h4 class="mb-3 mb-md-0">Список переводов [Money Logs]</h4></div>
             <div class="d-flex align-items-center flex-wrap text-nowrap">
               <div class="input-group date datepicker dashboard-date mr-2 mb-2 mb-md-0 d-md-none d-xl-flex" id="dashboardDate" disabled>
                 <span class="input-group-addon bg-transparent"><i data-feather="calendar" class=" text-primary" disabled></i></span>
@@ -58,43 +72,41 @@
             <div class="col-lg-12 col-xl-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                    
-                    <table class="table table-bordered" data-filtering="true">
-                        <thead>
-                            <tr>
-                                <th><i class="flag-icon flag-icon-gb mr-2"></i><strong>EN</strong></th>
-                                <th><i class="flag-icon flag-icon-de mr-2"></i><strong>DE</strong></th>
-                                <th><i class="flag-icon flag-icon-ru mr-2"></i><strong>RU</strong></th>
-                                <th><i class="flag-icon flag-icon-es mr-2"></i><strong>ES</strong></th>
-                                <th><i class="flag-icon flag-icon-rs mr-2"></i><strong>RS</strong></th>
-                                <th><i class="flag-icon flag-icon-it mr-2"></i><strong>IT</strong></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>house bet</td><td>Hausgebot</td><td><strong>ставка на дом</strong></td><td>casa apuesta</td><td>Klađenje na kuće</td><td>scommessa della casa</td></tr>
-                            <tr><td>Auction return</td><td>Auktion zurückgeben</td><td><strong>возврат аук</strong></td><td>subasta de retorno</td><td>Povratak aukcije</td><td>Asta ritorno</td></tr>
-                            <tr><td>house payment</td><td>Hauszahlung</td><td><strong>оплата дома</strong></td><td>pago de la casa</td><td>plaćanje kuće</td><td>pagamento della casa</td></tr>
-                            <tr><td>rent a house</td><td>Hausmiete</td><td><strong>аренда дома</strong></td><td>alquile una casa</td><td>Iznajmite kuću</td><td>affittare una casa</td></tr>
-                            <tr><td>state house</td><td>Staatshaus</td><td><strong>дом в гос</strong></td><td>casa del estado</td><td>državna kuća</td><td>casa di stato</td></tr>
-                            <tr><td>sold the house</td><td>hat das Haus verkauft</td><td><strong>продал дом</strong></td><td>vendió la casa</td><td>Prodao kuću</td><td>ha venduto la casa</td></tr>
-                            <tr><td></td><td></td><td><strong></strong></td><td></td><td></td><td></td></tr>
-                            <tr><td>car from the state</td><td>Auto aus Staat</td><td><strong>машина с госа</strong></td><td>coche del estado</td><td>auto iz države</td><td>auto governaticìva</td></tr>
-                            <tr><td>bought a car</td><td>kaufte ein Auto</td><td><strong>купил машину</strong></td><td>compró un coche</td><td>kupio automobil</td><td>ha comprato un auto</td></tr>
-                            <tr><td>sold the car</td><td>verkaufte ein Auto</td><td><strong>продал машину</strong></td><td>vendió el auto</td><td>Prodao je automobil</td><td>ha venduto l auto</td></tr>
-                            <tr><td>put ts on the auto fair</td><td>stelle es auf den Parkplatz</td><td><strong>выставил тс на автоярмарку</strong></td><td>pon ts en la feria automática</td><td>postavio vozilo na auto-pijacu</td><td>mettere ts sulla fiera auto</td></tr>
-                            <tr><td>sale of vehicle to the state</td><td>Verkauf von Fahrzeug im Staat</td><td><strong>продажа тс в гос</strong></td><td>venta de vehículo al estado</td><td>prodaja vozila državi</td><td>vendita del veicolo allo stato</td></tr>
-                            <tr><td>bought vehicle insurance</td><td>eine Versicherung für ein Fahrzeug gekauft</td><td><strong>купил страховку транспорт</strong></td><td>seguro de vehículo comprado</td><td>Kupilo osiguranje vozila</td><td>ha comprato l assicurazione del veicolo</td></tr>
-                            <tr><td></td><td></td><td><strong></strong></td><td></td><td></td><td></td></tr>
-                            <tr><td>bet on business</td><td>Gebot auf das Business</td><td><strong>ставка на бизнес</strong></td><td>apuesta por negocios</td><td>Kladite se na biznis</td><td>scommettere sul business</td></tr>
-                            <tr><td>Payment for business</td><td>Bezahlung für Geschäft</td><td><strong>Оплата бизнеса</strong></td><td>Pago por negocios</td><td>Plaćanje biznisa</td><td>Pagamento per affari</td></tr>
-                            <tr><td>sold the family business</td><td>verkaufte das Familienunternehmen</td><td><strong>продал семейный биз</strong></td><td>vendí el negocio familiar</td><td>prodao porodični biznis</td><td>ha venduto l azienda di famiglia</td></tr>
-                            <tr><td>sold business</td><td>verkaufte das Geschäft</td><td><strong>продал биз</strong></td><td>vendido negocio</td><td>prodao biznis</td><td>affari venduti</td></tr>
-                            <tr><td>business in the state</td><td>Geschäft im Staat</td><td><strong>биз в гос</strong></td><td>negocio en el estado</td><td>biznis za državnu</td><td>affari nello stato</td></tr>
-                            <tr><td>sale of vehicle to the state</td><td>Verkauf von Fahrzeug im Staat</td><td><strong>продажа тс в гос</strong></td><td>venta de vehículo al estado</td><td>prodaja vozila državi</td><td>vendita del veicolo allo stato</td></tr>
-                            <!--<tr><td>EN</td><td>DE</td><td><strong>RU</strong></td><td>ES</td><td>RS</td><td>IT</td><td>FR</td><td>PT</td></tr>-->
-                        </tbody>
-                    </table>
-
+                  <table class="table table-bordered" data-filtering="true">
+                    <thead>
+                      <tr>
+                        <th><i class="flag-icon flag-icon-gb mr-2"></i><strong>EN</strong></th>
+                        <th><i class="flag-icon flag-icon-de mr-2"></i><strong>DE</strong></th>
+                        <th><i class="flag-icon flag-icon-ru mr-2"></i><strong>RU</strong></th>
+                        <th><i class="flag-icon flag-icon-es mr-2"></i><strong>ES</strong></th>
+                        <th><i class="flag-icon flag-icon-rs mr-2"></i><strong>RS</strong></th>
+                        <th><i class="flag-icon flag-icon-it mr-2"></i><strong>IT</strong></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>house bet</td><td>Hausgebot</td><td><strong>ставка на дом</strong></td><td>casa apuesta</td><td>Klađenje na kuće</td><td>scommessa della casa</td></tr>
+                      <tr><td>Auction return</td><td>Auktion zurückgeben</td><td><strong>возврат аук</strong></td><td>subasta de retorno</td><td>Povratak aukcije</td><td>Asta ritorno</td></tr>
+                      <tr><td>house payment</td><td>Hauszahlung</td><td><strong>оплата дома</strong></td><td>pago de la casa</td><td>plaćanje kuće</td><td>pagamento della casa</td></tr>
+                      <tr><td>rent a house</td><td>Hausmiete</td><td><strong>аренда дома</strong></td><td>alquile una casa</td><td>Iznajmite kuću</td><td>affittare una casa</td></tr>
+                      <tr><td>state house</td><td>Staatshaus</td><td><strong>дом в гос</strong></td><td>casa del estado</td><td>državna kuća</td><td>casa di stato</td></tr>
+                      <tr><td>sold the house</td><td>hat das Haus verkauft</td><td><strong>продал дом</strong></td><td>vendió la casa</td><td>Prodao kuću</td><td>ha venduto la casa</td></tr>
+                      <tr><td></td><td></td><td><strong></strong></td><td></td><td></td><td></td></tr>
+                      <tr><td>car from the state</td><td>Auto aus Staat</td><td><strong>машина с госа</strong></td><td>coche del estado</td><td>auto iz države</td><td>auto governaticìva</td></tr>
+                      <tr><td>bought a car</td><td>kaufte ein Auto</td><td><strong>купил машину</strong></td><td>compró un coche</td><td>kupio automobil</td><td>ha comprato un auto</td></tr>
+                      <tr><td>sold the car</td><td>verkaufte ein Auto</td><td><strong>продал машину</strong></td><td>vendió el auto</td><td>Prodao je automobil</td><td>ha venduto l auto</td></tr>
+                      <tr><td>put ts on the auto fair</td><td>stelle es auf den Parkplatz</td><td><strong>выставил тс на автоярмарку</strong></td><td>pon ts en la feria automática</td><td>postavio vozilo na auto-pijacu</td><td>mettere ts sulla fiera auto</td></tr>
+                      <tr><td>sale of vehicle to the state</td><td>Verkauf von Fahrzeug im Staat</td><td><strong>продажа тс в гос</strong></td><td>venta de vehículo al estado</td><td>prodaja vozila državi</td><td>vendita del veicolo allo stato</td></tr>
+                      <tr><td>bought vehicle insurance</td><td>eine Versicherung für ein Fahrzeug gekauft</td><td><strong>купил страховку транспорт</strong></td><td>seguro de vehículo comprado</td><td>Kupilo osiguranje vozila</td><td>ha comprato l assicurazione del veicolo</td></tr>
+                      <tr><td></td><td></td><td><strong></strong></td><td></td><td></td><td></td></tr>
+                      <tr><td>bet on business</td><td>Gebot auf das Business</td><td><strong>ставка на бизнес</strong></td><td>apuesta por negocios</td><td>Kladite se na biznis</td><td>scommettere sul business</td></tr>
+                      <tr><td>Payment for business</td><td>Bezahlung für Geschäft</td><td><strong>Оплата бизнеса</strong></td><td>Pago por negocios</td><td>Plaćanje biznisa</td><td>Pagamento per affari</td></tr>
+                      <tr><td>sold the family business</td><td>verkaufte das Familienunternehmen</td><td><strong>продал семейный биз</strong></td><td>vendí el negocio familiar</td><td>prodao porodični biznis</td><td>ha venduto l azienda di famiglia</td></tr>
+                      <tr><td>sold business</td><td>verkaufte das Geschäft</td><td><strong>продал биз</strong></td><td>vendido negocio</td><td>prodao biznis</td><td>affari venduti</td></tr>
+                      <tr><td>business in the state</td><td>Geschäft im Staat</td><td><strong>биз в гос</strong></td><td>negocio en el estado</td><td>biznis za državnu</td><td>affari nello stato</td></tr>
+                      <tr><td>sale of vehicle to the state</td><td>Verkauf von Fahrzeug im Staat</td><td><strong>продажа тс в гос</strong></td><td>venta de vehículo al estado</td><td>prodaja vozila državi</td><td>vendita del veicolo allo stato</td></tr>
+                      <!--<tr><td>EN</td><td>DE</td><td><strong>RU</strong></td><td>ES</td><td>RS</td><td>IT</td><td>FR</td><td>PT</td></tr>-->
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -118,4 +130,4 @@
     <script src="assets/js/datepicker.js"></script>
     <script src="assets/js/copy.js"></script>
   </body>
-</html>    
+</html>

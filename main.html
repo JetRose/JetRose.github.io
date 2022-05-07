@@ -35,7 +35,21 @@
               <a href="index.html" class="nav-link"><i class="link-icon" data-feather="briefcase"></i><span class="link-title">Список вещей</span></a>
             </li>
             <li class="nav-item">
-              <a href="lang.html" class="nav-link"><i class="link-icon" data-feather="globe"></i><span class="link-title">Список переводов</span></a>
+              <a class="nav-link" data-toggle="collapse" href="#lang" role="button" aria-expanded="false" aria-controls="lang">
+                <i class="link-icon" data-feather="globe"></i>
+                <span class="link-title">Список переводов</span>
+                <i class="link-arrow" data-feather="chevron-down"></i>
+              </a>
+              <div class="collapse" id="lang">
+                <ul class="nav sub-menu">
+                  <li class="nav-item">
+                    <a href="lang.html" class="nav-link">Money Logs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Items Logs</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
